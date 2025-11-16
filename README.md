@@ -1,4 +1,3 @@
-![Progress](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/<AishwaryaTS-cloud>/<100-Days-of-Python>/main/.github/progress.json)
 # 100 Days of Python 🧠🐍
 
 *(Building 100 projects in 100 days with Python)*
