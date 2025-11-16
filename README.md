@@ -29,7 +29,7 @@ This journey is based around the course *“Master Python by building 100 projec
 | 📈 Reflect & Grow | At week-ends/month-end I’ll reflect what went well / what I struggled with. |
 
 ## How This Repo Is Organized
-```python
+
 
 /100-Days-of-Python/
 │
@@ -46,7 +46,7 @@ This journey is based around the course *“Master Python by building 100 projec
 ├─ [README.md](http://readme.md/)
 └─ [log.md](http://log.md/) ← daily journal / links to days
 
-```
+
 
 ## Why Share Publicly?
 
