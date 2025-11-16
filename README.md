@@ -1,3 +1,4 @@
+![Progress](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/<AishwaryaTS-cloud>/<100-Days-of-Python>/main/.github/progress.json)
 # 100 Days of Python 🧠🐍
 
 *(Building 100 projects in 100 days with Python)*
@@ -30,23 +31,23 @@ This journey is based around the course *“Master Python by building 100 projec
 
 ## How This Repo Is Organized
 
+```
 /100-Days-of-Python/
 │
 ├─ Day01/
-│ ├ [day01.py](http://day01.py/)
-│ └ [README.md](http://readme.md/) ← what I built + notes
+│ ├ [day01.py]
+│ └ [README.md] ← what I built + notes
 │
 ├─ Day02/
-│ ├ [day02.py](http://day02.py/)
-│ └ [README.md](http://readme.md/)
+│ ├ [day02.py]
+│ └ [README.md]
 │
 …
 │
-├─ [README.md](http://readme.md/)
-└─ [log.md](http://log.md/) ← daily journal / links to days
+├─ [README.md]
+└─ [log.md]← daily journal / links to days
 
-markdown
-Copy code
+```
 
 ## Why Share Publicly?
 
