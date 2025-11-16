@@ -31,7 +31,7 @@ This journey is based around the course *“Master Python by building 100 projec
 
 ## How This Repo Is Organized
 
-```
+```python
 /100-Days-of-Python/
 │
 ├─ Day01/
