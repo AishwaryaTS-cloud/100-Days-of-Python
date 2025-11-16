@@ -44,7 +44,6 @@ This journey is based around the course *“Master Python by building 100 projec
 …
 │
 ├─ [README.md]
-└─ [log.md]← daily journal / links to days
 
 ```
 
