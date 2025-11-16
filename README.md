@@ -30,7 +30,6 @@ This journey is based around the course *“Master Python by building 100 projec
 
 ## How This Repo Is Organized
 
-
 /100-Days-of-Python/
 │
 ├─ Day01/
@@ -46,7 +45,8 @@ This journey is based around the course *“Master Python by building 100 projec
 ├─ [README.md](http://readme.md/)
 └─ [log.md](http://log.md/) ← daily journal / links to days
 
-
+markdown
+Copy code
 
 ## Why Share Publicly?
 
