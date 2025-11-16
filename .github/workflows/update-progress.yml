@@ -1,0 +1,46 @@
+name: Update Progress Badge
+
+on:
+  push:
+    paths:
+      - "Day*/**"
+      - ".github/workflows/update-progress.yml"
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Count Day folders
+        id: count
+        run: |
+          DAYS=$(ls -d Day* 2>/dev/null | wc -l)
+          echo "days=$DAYS" >> $GITHUB_OUTPUT
+
+      - name: Generate progress file
+        run: |
+          TOTAL=100
+          DAYS=${{ steps.count.outputs.days }}
+          PERCENT=$(( DAYS * 100 / TOTAL ))
+          cat > .github/progress.json <<EOF
+          {
+            "schemaVersion": 1,
+            "label": "Python Challenge",
+            "message": "$DAYS of 100 days ($PERCENT%)",
+            "color": "blue"
+          }
+          EOF
+
+      - name: Commit progress
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .github/progress.json
+          git commit -m "Update progress badge"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
