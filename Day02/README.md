@@ -1,73 +1,60 @@
 ## 🚀 Day 02 – 100 Days of Coding
 
-Today I continued my Python journey with the **Udemy – Complete Python Bootcamp by Angela Yu**.
-
-I explored the core building blocks of Python — data types, converting between types, and doing basic math operations. These are fundamentals that make later concepts much easier.
+Today I worked on number manipulation concepts from the **Udemy – Complete Python Bootcamp by Angela Yu** and built a practical mini-project: **Tip Calculator**.
 
 ---
 
 ## 📚 What I Learned Today
 
-### **🔹 Python Primitive Data Types**
-
-- `int`
-- `float`
-- `str`
-- `bool`
-- How Python stores and interprets these values
-
-### **🔹 Type Checking & Type Conversion**
-
-- Checking types using `type()`
-- Converting types with `int()`, `float()`, `str()`, `bool()`
-
-### **🔹 Mathematical Operations**
-
-- Addition, subtraction, multiplication, division
-- Exponents (`*`)
-- Floor division (`//`)
-- Modulus (`%`)
-- Operator precedence (PEMDAS)
-
-### **🔹 Number Manipulation**
-
-- Using `int()` to convert numbers
-- Using `round()` to control decimal places
-- Using **f-strings** for clean, formatted output
-    
-    (Example: `print(f"Your score is {score:.2f}")`)
-    
-
-All concepts are from the **Udemy Python Course – Complete Python Bootcamp by Angela Yu**.
+- Python primitive data types
+- Type checking with `type()`
+- Type conversion using `int()`, `float()`, `str()`
+- Mathematical operations in Python
+- Number manipulation using `int()`, `round()`, and **f-strings**
 
 ---
 
-## 🧪 Practice Code Snippets
+## 🧩 Project — Tip Calculator
+
+This beginner-friendly project calculates how much each person should pay when splitting a bill with a chosen tip percentage.
+
+The program asks for:
+
+- Total bill amount
+- Tip percentage
+- Number of people splitting the bill
+
+Then it returns the amount each person should pay.
+
+---
+
+## 📌 Code
 
 ```python
-# Type checking
-print(type(10))
-print(type(3.14))
-print(type("Aishwarya"))
-print(type(True))
+print("Welcome to the tip calculator!")
 
-# Type conversion
-num = "50"
-num_int = int(num)
-print(num_int + 10)
+bill = float(input("What was the total bill? $"))
+tip_percentage = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+num_people = int(input("How many people to split the bill? "))
 
-# Math operations
-print(7 // 2)   # Floor division
-print(7 % 2)    # Remainder
-print(2 ** 3)   # Exponent
+tip_amount = bill * (tip_percentage / 100)
+total_bill = bill + tip_amount
+bill_per_person = total_bill / num_people
 
-# Number manipulation
-value = 3.4567
-print(round(value, 2))
+final_amount = "{:.2f}".format(bill_per_person)
 
-# f-string example
-age = 20
-print(f"I am {age} years old.")
+print(f"Each person should pay: ${final_amount}")
+
+```
+
+### 🎯 Sample Output
+
+```
+Welcome to the tip calculator!
+What was the total bill? $150
+What percentage tip would you like to give? 10, 12, or 15? 12
+How many people to split the bill? 5
+Each person should pay: $33.60
 
 ```
 
@@ -75,6 +62,6 @@ print(f"I am {age} years old.")
 
 ## 🌱 Day 02 Summary
 
-Solid progress today — I understood how Python handles data internally, practiced converting types, and learned how to perform mathematical operations properly. Also got comfortable using rounding and f-strings to format output cleanly.
+Good progress today — practiced converting data types, formatting numbers, and applying math operations in a real project. The tip calculator helped me understand how these concepts work together in practical programs.
 
 ---
